@@ -31,5 +31,18 @@ describe('Password Checker', () => {
 
         expect(result.has1SpecialCharacter('dd44@d4e')).toBe(true);
     });
+
+    // Step 3
+
+    it('should return false if password does not have a number', () => {
+        
+
+        expect(result.has1Number('ezg(fsdg')).toBe(false);
+    });
     
+    it ('should return true if password has a number', () => {
+        
+
+        expect(result.has1Number('infb)75')).toBe(true);
+    });
 });
