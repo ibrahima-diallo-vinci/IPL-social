@@ -1,12 +1,11 @@
 {
   "name": "examen",
   "version": "0.0.0",
-  
+  "type": "module",
   "private": true,
- 
-
   "scripts": {
     "start": "nodemon app.js",
+    "test": "jasmine",
     "build": "echo 'No build step defined'"
   },
   "dependencies": {
@@ -32,6 +31,5 @@
     "eslint-plugin-promise": "^6.0.0",
     "jasmine": "^4.6.0",
     "nodemon": "^2.0.15"
-  },
-  "type": "commonjs"
+  }
 }
