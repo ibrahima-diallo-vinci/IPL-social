@@ -4,10 +4,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "jasmine",
-    "build": "echo 'No build step defined'"
-  },
+  "start": "nodemon app.js",
+  "test": "node --experimental-vm-modules node_modules/jasmine/bin/jasmine.js",
+  "build": "echo 'No build step defined'"
+},
   "dependencies": {
     "bcrypt": "^5.1.0",
     "better-sqlite3": "^9.4.3",
